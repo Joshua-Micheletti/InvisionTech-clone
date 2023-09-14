@@ -1,0 +1,36 @@
+.dropdown-button {
+    border: 0px;
+    box-shadow: none;
+    background: none;
+    border-radius: 0px;
+    color: rgb(0, 0, 60) !important;
+}
+
+.dropdown-button:hover {
+    color: rgb(33, 83, 182) !important;
+}
+
+.menu {
+    position: absolute;
+    list-style-type: none;
+
+    margin: 25px 0px;
+    padding: 0;
+  
+    border: 3px;
+    width: 300px;
+    /* height: 150px; */
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    /* border-top: red; */
+    border-bottom: red;
+    border-left: red;
+    border-right: red;
+    color: rgb(33, 83, 182);
+
+}
+
+.menu-item {
+    margin: 15px 20px;
+}

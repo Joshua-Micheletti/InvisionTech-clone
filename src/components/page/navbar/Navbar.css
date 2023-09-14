@@ -1,0 +1,29 @@
+.navbar {
+    padding-right: 2.7% !important;
+    font-family: NunitoBold;
+    font-size: 17px;
+    height: 133px;
+}
+
+.navbar-brand {
+    align-items: left;
+    margin-left: 4.3%;
+}
+
+.nav-item {
+    margin: 0.35em;
+}
+
+.nav-link {
+    color: rgb(0, 0, 60) !important;
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: rgb(33, 83, 182) !important;
+}
+
+.home-link {
+    color: rgb(33, 83, 182) !important;
+}
+
