@@ -18,11 +18,11 @@ export default function Navbar() {
                         <a className="nav-link home-link" href="#">Home</a>
                     </div>
                     <div className="nav-item nav-link">
-                        {/* <a className="nav-link" href="#">Server</a> */}
-                        <Dropdown text="Server"/>
+                        <Dropdown text="Server" items="VPS Cloud,Server Dedicati,VPS 10Gbit" />
                     </div>
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Web</a>
+                    <div className="nav-item nav-link">
+                        {/* <a className="nav-link" href="#">Web</a> */}
+                        <Dropdown text="Web" items="Web Hosting, Domini, Web Dev" />
                     </div>
                     <div className="nav-item">
                         <a className="nav-link" href="#">VoIP</a>
@@ -30,8 +30,9 @@ export default function Navbar() {
                     <div className="nav-item">
                         <a className="nav-link" href="#">Gaming</a>
                     </div>
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Azienda</a>
+                    <div className="nav-item nav-link">
+                        {/* <a className="nav-link" href="#">Azienda</a> */}
+                        <Dropdown text="Azienda" items="Su di Noi, Programma, Azienda Digitale, Anti Ddos, Contattaci" />
                     </div>
                 </div>
             </div>
