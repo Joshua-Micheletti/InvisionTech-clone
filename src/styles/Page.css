@@ -1,0 +1,10 @@
+.Page {
+    background-image: url("https://invisiontech.eu/assets/img/bg.png");
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10%;
+    background-position: right top;
+    background-size:     contain;
+    background-repeat:   no-repeat;
+}

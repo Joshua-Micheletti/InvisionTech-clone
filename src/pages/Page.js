@@ -1,16 +1,26 @@
 import React from "react"
 // import Title from "./title/Title"
 // import Icon from "./icon/Icon"
-import Navbar from "./navbar/Navbar"
-import ImageAnimated from "./imageanimated/ImageAnimated"
-import "./Page.css"
+import Navbar from "../layouts/Navbar"
+import Description from "../components/Description"
+import "../styles/Page.css"
 
 export default function Page() {
 
     return(
         <div className="Page">
-            {/* <Navbar /> */}
-            <ImageAnimated />
+            <Navbar />
+            <Description />
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
@@ -41,16 +51,7 @@ export default function Page() {
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
             <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            {/* <Transitioning /> */}
             
 
             

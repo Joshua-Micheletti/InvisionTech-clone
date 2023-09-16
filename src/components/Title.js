@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import './Title.css';
+import '../styles/Title.css';
 
 class Title extends Component {
   render() {

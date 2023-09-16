@@ -1,0 +1,29 @@
+@import "./Animations.css";
+
+.description-container {
+    margin-top: 12.5%;
+    width: 100%;
+    text-align: center;
+    font-family: "NunitoBold";
+}
+
+.invision-tech {
+    font-size: 62px;
+    animation-name: fade-left;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+
+.description {
+    margin-top: 1%;
+    color: rgb(120, 120, 120);
+    font-size: 18px;
+    line-height: 32px;
+    animation-name: fade-left-more;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    /* position:absolute; */
+}

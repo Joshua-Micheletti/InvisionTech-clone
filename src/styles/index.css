@@ -6,6 +6,6 @@ body {
 
 @font-face {
   font-family: "NunitoBold";
-  src: local("NunitoBold"), url("./fonts/nunito/Nunito-Bold.ttf") format("truetype");
+  src: local("NunitoBold"), url("../assets/fonts/nunito/Nunito-Bold.ttf") format("truetype");
   font-weight: bold;
 }

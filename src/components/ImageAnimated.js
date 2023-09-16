@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 // import { animated } from '@react-spring/web'
 // import { motion } from 'framer-motion'
-import "./ImageAnimated.css"
+import "../styles/ImageAnimated.css"
 
 export default function ImageAnimated(props) {
     const [shouldAnimate, setShouldAnimate] = useState(false);

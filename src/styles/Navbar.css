@@ -1,0 +1,54 @@
+@import "Animations.css";
+
+.navbar {
+    padding-right: 2.7% !important;
+    font-family: NunitoBold;
+    font-size: 17px;
+    height: 133px;
+    z-index: 10;
+}
+
+.navbar-brand {
+    align-items: left;
+    margin-left: 4.3%;
+}
+
+.nav-item {
+    margin: 0.25em;
+    color: rgb(0, 0, 60) !important;
+}
+
+.nav-item:hover {
+    color: rgb(33, 83, 182) !important;
+}
+
+.nav-link {
+    color: rgb(0, 0, 60) !important;
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: rgb(33, 83, 182) !important;
+}
+
+.home-link {
+    color: rgb(33, 83, 182) !important;
+}
+
+.no-overflow {
+    overflow: unset;
+}
+
+.custom-sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.fade-down {
+    animation-name: fade-down;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15); 
+}
+
