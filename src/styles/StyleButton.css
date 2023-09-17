@@ -1,0 +1,102 @@
+@keyframes background-change {
+    from {
+        background-color: rgb(37, 20, 72);
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes light-background-change {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: rgb(37, 20, 72);
+    }
+}
+
+@keyframes dark-center {
+    from {
+        background-color: white;
+        top: 28px;
+    }   
+
+    to {
+        background-color: rgb(37, 20, 72);
+        top: 4px;
+    }
+}
+
+@keyframes light-center {
+    from {
+        background-color: rgb(37, 20, 72);
+        top: 4px;
+    }   
+
+    to {
+        background-color: white;
+        top: 28px;
+    }
+}
+
+.style-button {
+    position: fixed;
+    width: 34px;
+    height: 60px;
+    z-index: 120;
+    border-radius: 17px;
+    left: 95%;
+    top: 47%;
+    cursor: pointer;
+}
+
+.style-button-center {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    z-index: 130;
+    border-radius: 14px;
+    left: 3px;
+    /* top: 48%; */
+    top: 28px;
+    /* top: 4px; */
+}
+
+.dark-background {
+    background-color: rgb(37, 20, 72);
+    animation-name: background-change;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.light-background {
+    background-color: white;
+    animation-name: light-background-change;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.dark-center {
+    background-color: white;
+    animation-name: dark-center;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-image: url("../assets/sun.svg");
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.light-center {
+    background-color: rgb(37, 20, 72);
+    animation-name: light-center;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-image: url("../assets/moon.svg");
+    background-size: 22px;
+    background-repeat:no-repeat;
+    background-position: center;
+}

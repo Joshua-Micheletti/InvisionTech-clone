@@ -34,21 +34,21 @@ export default function Dropdown(props) {
 
     for (var i = 0; i < elements.length; i++) {
         menuItems.push(
-            <li className='menu-item' key={elements[i]}>
-                <button className='dropdown-button'>{elements[i]}</button>
+            <li className={'menu-item ' + (props.dark ? "dark-menu-item" : "light-menu-item")} key={elements[i]}>
+                <button className={'dropdown-button ' + (props.dark ? "dark-button" : "light-button")} >{elements[i]}</button>
             </li>
         );
     }
 
     return(
         <div ref={ref}>
-            <button className="dropdown-button" onClick={handleClick}>{props.text}</button>
+            <button className={"dropdown-button " + (props.dark ? "dark-button" : "light-button")} onClick={handleClick}>{props.text}</button>
             {isOpen ?
-                <div className="menu">
+                <div className={"menu " + (props.dark ? "dark-menu" : "light-menu")}>
                     {menuItems}
                 </div>
                 :
-                <div className={isHidden ? "menu-closed menu-hidden" : "menu-closed"}>
+                <div className={"menu-closed " + (isHidden ? "menu-hidden " : "") + (props.dark ? "dark-menu" : "light-menu")}>
                     {menuItems}
                 </div>
             }

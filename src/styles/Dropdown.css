@@ -5,7 +5,6 @@
     box-shadow: none;
     background: none;
     border-radius: 0px;
-    color: rgb(0, 0, 60) !important;
 }
 
 .dropdown-button:hover {
@@ -22,7 +21,7 @@
     border: 3px;
     width: 300px;
     /* height: 150px; */
-    background-color: white;
+    /* background-color: white; */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-style: solid;
     /* border-top: red; */
@@ -47,7 +46,7 @@
     border: 3px;
     width: 300px;
     /* height: 150px; */
-    background-color: white;
+    /* background-color: white; */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-style: solid;
     /* border-top: red; */
@@ -74,4 +73,28 @@
 
 .menu-item {
     margin: 15px 20px;
+}
+
+.dark-button {
+    color: white !important;
+}
+
+.light-button {
+    color: rgb(0, 0, 60) !important;
+}
+
+.dark-menu {
+    background-color: rgb(49, 15, 77);
+}
+
+.light-menu {
+    background-color: white;
+}
+
+.dark-menu-item {
+    color: white;
+}
+
+.light-menu-item {
+    color: black;
 }

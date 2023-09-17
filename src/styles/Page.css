@@ -1,5 +1,5 @@
 .Page {
-    background-image: url("https://invisiontech.eu/assets/img/bg.png");
+    
     height: 100%;
     display: flex;
     flex-flow: column;
@@ -7,4 +7,13 @@
     background-position: right top;
     background-size:     contain;
     background-repeat:   no-repeat;
+}
+
+.dark {
+    background-image: none;
+    background-color: black;
+}
+
+.light {
+    background-image: url("https://invisiontech.eu/assets/img/bg.png");
 }

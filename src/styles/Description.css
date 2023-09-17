@@ -16,7 +16,6 @@
 
 .description {
     margin-top: 1%;
-    color: rgb(120, 120, 120);
     font-size: 18px;
     line-height: 32px;
     animation-name: fade-left-more;
@@ -26,4 +25,20 @@
     opacity: 0%;
     animation-fill-mode: forwards;
     /* position:absolute; */
+}
+
+.dark-it {
+    color: white;
+}
+
+.light-it {
+    color: rgb(40, 40, 55);
+}
+
+.dark-description {
+    color: white;
+}
+
+.light-description {
+    color: rgb(120, 120, 120);
 }

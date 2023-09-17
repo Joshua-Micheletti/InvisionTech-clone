@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 
 import { useIsVisible } from "../hooks/useIsVisible"
 
-export default function Navbar() {
+export default function Navbar(props) {
     const ref = useRef();
     const isVisible = useIsVisible(ref);
 
@@ -22,27 +22,28 @@ export default function Navbar() {
                         <div className="nav-item">
                             <a className="nav-link home-link" href="#">Home</a>
                         </div>
-                        <div className="nav-item nav-link">
-                            <Dropdown text="Server" items="VPS Cloud,Server Dedicati,VPS 10Gbit" />
+                        <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")}>
+                            <Dropdown dark={props.dark} text="Server" items="VPS Cloud,Server Dedicati,VPS 10Gbit" />
                         </div>
-                        <div className="nav-item nav-link">
-                            <Dropdown text="Web" items="Web Hosting, Domini, Web Dev" />
+                        <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")}>
+                            <Dropdown dark={props.dark} text="Web" items="Web Hosting, Domini, Web Dev" />
                         </div>
-                        <div className="nav-item">
-                            <a className="nav-link" href="#">VoIP</a>
+                        <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")} href="#">
+                            VoIP
                         </div>
-                        <div className="nav-item">
-                            <a className="nav-link" href="#">Gaming</a>
+                        <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")} href="#">
+                            Gaming
                         </div>
-                        <div className="nav-item nav-link">
-                            <Dropdown text="Azienda" items="Su di Noi, Programma, Azienda Digitale, Anti Ddos, Contattaci" />
+                        <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")}>
+                            <Dropdown dark={props.dark} text="Azienda" items="Su di Noi, Programma, Azienda Digitale, Anti Ddos, Contattaci" />
                         </div>
                     </div>
                 </div>
             </nav>
 
             {!isVisible ?
-                <nav className="navbar navbar-expand-lg navbar-dark bg-light custom-sticky-top fade-down">
+                <nav className={"navbar navbar-expand-lg navbar-dark bg-light custom-sticky-top fade-down " +
+                                (props.dark ? "dark-nav" : "light-nav")}>
                     <a className="navbar-brand" href="#">
                         <Icon />
                     </a>
@@ -51,20 +52,20 @@ export default function Navbar() {
                             <div className="nav-item">
                                 <a className="nav-link home-link" href="#">Home</a>
                             </div>
-                            <div className="nav-link nav-item">
-                                <Dropdown text="Server" items="VPS Cloud,Server Dedicati,VPS 10Gbit" />
+                            <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")}>
+                                <Dropdown dark={props.dark} text="Server" items="VPS Cloud,Server Dedicati,VPS 10Gbit" />
                             </div>
-                            <div className="nav-item nav-link">
-                                <Dropdown text="Web" items="Web Hosting, Domini, Web Dev" />
+                            <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")}>
+                                <Dropdown dark={props.dark} text="Web" items="Web Hosting, Domini, Web Dev" />
                             </div>
-                            <div className="nav-item">
-                                <a className="nav-link" href="#">VoIP</a>
+                            <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")} href="#">
+                                VoIP
                             </div>
-                            <div className="nav-item">
-                                <a className="nav-link" href="#">Gaming</a>
+                            <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")} href="#">
+                                Gaming
                             </div>
-                            <div className="nav-item nav-link">
-                                <Dropdown text="Azienda" items="Su di Noi, Programma, Azienda Digitale, Anti Ddos, Contattaci" />
+                            <div className={"nav-item " + (props.dark ? "dark-item" : "light-item")}>
+                                <Dropdown dark={props.dark} text="Azienda" items="Su di Noi, Programma, Azienda Digitale, Anti Ddos, Contattaci" />
                             </div>
                         </div>
                     </div>
