@@ -1,36 +1,4 @@
-@keyframes fade-up {
-    from {
-        /* background-color: aqua; */
-        /* margin-bottom: 20px; */
-        transform: translateY(3em);
-        opacity: 0%;
-    }
-
-    to {
-        /* background-color: red; */
-        /* margin-bottom: 0px; */
-        transform: translateY(0em);
-        opacity: 100%;
-    }
-}
-
-@keyframes close-fade-down {
-    0% {
-        transform: translateY(0em);
-        opacity: 100%;
-        display: block;
-    }
-
-    99% {
-        transform: translateY(3em);
-        opacity: 0%;
-        display: block;
-    }
-
-    100% {
-        display: none;
-    }
-}
+@import "Animations.css";
 
 .dropdown-button {
     border: 0px;
@@ -93,7 +61,7 @@
     animation-timing-function: ease;
     /* animation-direction: reverse; */
 
-    opacity: 0%;
+    opacity: 0;
     /* display: none; */
     display: block;
     animation-fill-mode: forwards;
@@ -116,7 +84,7 @@
 }
 
 .dark-menu {
-    background-color: rgb(49, 15, 77);
+    background-color: rgb(32, 22, 46);
 }
 
 .light-menu {

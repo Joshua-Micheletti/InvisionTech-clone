@@ -3,14 +3,14 @@
         /* background-color: aqua; */
         /* margin-bottom: 20px; */
         transform: translateY(3em);
-        opacity: 0%;
+        opacity: 0;
     }
 
     to {
         /* background-color: red; */
         /* margin-bottom: 0px; */
         transform: translateY(0em);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -22,20 +22,20 @@
 
     to {
         transform: translateY(0em);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
 @keyframes close-fade-down {
     0% {
         transform: translateY(0em);
-        opacity: 100%;
+        opacity: 1;
         display: block;
     }
 
     99% {
         transform: translateY(3em);
-        opacity: 0%;
+        opacity: 0;
         display: block;
     }
 
@@ -47,24 +47,24 @@
 @keyframes fade-left {
     from {
         transform: translateX(-3em);
-        opacity: 0%;
+        opacity: 0;
     }
 
     to {
         transform: translateX(0em);
-        opacity: 100%;
+        opacity: 100;
     }
 }
 
 @keyframes fade-left-more {
     from {
         transform: translateX(-10%);
-        opacity: 0%;
+        opacity: 0;
     }
 
     to {
         transform: translateX(0%);
-        opacity: 100%;
+        opacity: 100;
         z-index: 0;
         display:block;
         position:relative;
