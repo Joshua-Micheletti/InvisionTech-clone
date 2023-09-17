@@ -1,4 +1,29 @@
-@import "./Animations.css";
+@keyframes fade-left {
+    from {
+        transform: translateX(-3em);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0em);
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-left-more {
+    from {
+        transform: translateX(-10%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 100%;
+        z-index: 0;
+        display:block;
+        position:relative;
+    }
+}
 
 .description-container {
     margin-top: 12.5%;
